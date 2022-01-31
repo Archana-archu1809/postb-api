@@ -14,10 +14,12 @@ import Search from "./Search";
 import Cleared from "./Cleared";
 import Starer from "./Starer";
 import Contract from "./ContractMaster";
+import FileUpload from "./Fileupload";
+import Login from "./Login";
 function App() {
   return (
     <div className="App">
-      <Contract />
+      <Login />
     </div>
   );
 }
