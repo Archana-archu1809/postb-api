@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
+import DeliveryDelayed from "./DeliveryDelay";
+import Dashboard from "./Dashboard";
+import Index3 from "./index3";
+import Index6 from "./index6";
+import Menu from "./Menu";
+import BillAccount from "./BillAccount";
+import Delivery from "./Deliverry";
+import IndexR from "./index3r";
+import Clearance from "./ClearanceStatus";
+import Clearance1 from "./ClearanceDelay";
+import Search from "./Search";
+import Cleared from "./Cleared";
+import Starer from "./Starer";
+import Contract from "./ContractMaster";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Contract />
     </div>
   );
 }
