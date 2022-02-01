@@ -16,10 +16,12 @@ import Starer from "./Starer";
 import Contract from "./ContractMaster";
 import FileUpload from "./Fileupload";
 import Login from "./Login";
+import PdaUpload from "./PdaUpload";
+import Index2 from "./Index2";
 function App() {
   return (
     <div className="App">
-      <Login />
+      <Index2 />
     </div>
   );
 }
