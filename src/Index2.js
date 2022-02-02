@@ -15,6 +15,10 @@ import {
   Input,
   Divider,
   DatePicker,
+  Image,
+  Statistic,
+  Table,
+  Tag,
 } from "antd";
 import LeftMenu from "./leftMenu";
 import { useState } from "react";
@@ -34,6 +38,9 @@ import {
   LikeOutlined,
   ShoppingCartOutlined,
   UserOutlined,
+  CloudDownloadOutlined,
+  HeartOutlined,
+  MessageOutlined,
 } from "@ant-design/icons";
 const { Header, Content, Footer } = Layout;
 const { Panel } = Collapse;
@@ -48,7 +55,8 @@ const text1 = (
       </Col>
     </Row>
     <Row>
-      <Col md={12} offset={12} sm={24}>
+      <Col md={12}></Col>
+      <Col md={12} sm={24}>
         <h5 style={{ display: "flex", justifyContent: "flex-end" }}>160/200</h5>
         <Progress percent={80} showInfo={false} />
         <h5 style={{ display: "flex", justifyContent: "flex-end" }}>310/200</h5>
@@ -59,8 +67,244 @@ const text1 = (
         <Progress percent={45} showInfo={false} />
       </Col>
     </Row>
+    <Row gutter={6}>
+      <Col
+        md={4}
+        offset={1}
+        sm={24}
+        style={{ paddingTop: "10px", paddingBottom: "10px" }}
+      >
+        <h5> 17% </h5>
+        <h5>$35,210.43</h5>
+        <h5>Total Revenue</h5>
+      </Col>
+      <Col md={1} style={{ paddingTop: "10px", paddingBottom: "10px" }}>
+        <Divider
+          type="vertical"
+          style={{ height: "100px", backgroundColor: "#000" }}
+        />
+      </Col>
+
+      <Col
+        md={4}
+        offset={1}
+        sm={24}
+        style={{ paddingTop: "10px", paddingBottom: "10px" }}
+      >
+        <h5>0%</h5>
+        <h5>$10,390.90</h5>
+        <h5>TOTAL COST</h5>
+      </Col>
+      <Col md={1} style={{ paddingTop: "10px", paddingBottom: "10px" }}>
+        <Divider
+          type="vertical"
+          style={{ height: "100px", backgroundColor: "#000" }}
+        />
+      </Col>
+      <Col
+        md={4}
+        offset={1}
+        sm={24}
+        style={{ paddingTop: "10px", paddingBottom: "10px" }}
+      >
+        <h5>20%</h5>
+        <h5>24,813.53</h5>
+        <h5>TOTAL PROFIT</h5>
+      </Col>
+      <Col md={1} style={{ paddingTop: "10px", paddingBottom: "10px" }}>
+        <Divider
+          type="vertical"
+          style={{ height: "100px", backgroundColor: "#000" }}
+        />
+      </Col>
+      <Col md={4} sm={24} style={{ paddingTop: "10px", paddingBottom: "10px" }}>
+        <h5>18%</h5>
+        <h5>1,200</h5>
+        <h5>GOAL COMPLETION</h5>
+      </Col>
+    </Row>
   </>
 );
+const text2 = <></>;
+const text3 = (
+  <>
+    <Row style={{ display: "flex", flexWrap: "wrap", overflowInline: "auto" }}>
+      <Space>
+        <Col sm={24}>
+          <Image
+            width={100}
+            style={{ borderRadius: "50%" }}
+            src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
+          />
+          <a href="index2" style={{ display: "flex", flexDirection: "Column" }}>
+            Alexander Pierce
+          </a>
+          <h5>Today</h5>
+        </Col>
+        <Col sm={24}>
+          <Image
+            width={100}
+            style={{ borderRadius: "50%" }}
+            src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
+          />
+          <a href="index2" style={{ display: "flex", flexDirection: "Column" }}>
+            Norman
+          </a>
+          <h5>Yesterday</h5>
+        </Col>
+
+        <Col sm={24}>
+          <Image
+            width={100}
+            style={{ borderRadius: "50%" }}
+            src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
+          />
+          <a href="index2" style={{ display: "flex", flexDirection: "Column" }}>
+            Jane
+          </a>
+          <h5>12 Jan</h5>
+        </Col>
+
+        <Col sm={24}>
+          <Image
+            width={100}
+            style={{ borderRadius: "50%" }}
+            src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
+          />
+          <a href="index2" style={{ display: "flex", flexDirection: "Column" }}>
+            John
+          </a>
+          <h5>12 Jan</h5>
+        </Col>
+      </Space>
+    </Row>
+
+    <Row style={{ display: "flex", flexWrap: "wrap", overflowInline: "auto" }}>
+      <Space>
+        <Col sm={24}>
+          <Image
+            width={100}
+            style={{ borderRadius: "50%" }}
+            src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
+          />
+          <a href="index2" style={{ display: "flex", flexDirection: "Column" }}>
+            Alexander
+          </a>
+          <h5>13 Jan</h5>
+        </Col>
+        <Col sm={24}>
+          <Image
+            width={100}
+            style={{ borderRadius: "50%" }}
+            src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
+          />
+          <a href="index2" style={{ display: "flex", flexDirection: "Column" }}>
+            Sarah
+          </a>
+          <h5>14 Jan</h5>
+        </Col>
+
+        <Col sm={24}>
+          <Image
+            width={100}
+            style={{ borderRadius: "50%" }}
+            src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
+          />
+          <a href="index2" style={{ display: "flex", flexDirection: "Column" }}>
+            Nora
+          </a>
+          <h5>15 Jan</h5>
+        </Col>
+
+        <Col sm={24}>
+          <Image
+            width={100}
+            style={{ borderRadius: "50%" }}
+            src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
+          />
+          <a href="index2" style={{ display: "flex", flexDirection: "Column" }}>
+            Nadia
+          </a>
+          <h5>15 Jan</h5>
+        </Col>
+      </Space>
+    </Row>
+  </>
+);
+const text4 = <></>;
+const columns = [
+  {
+    title: "OrderID",
+    dataIndex: "OrderID",
+    key: "OrderID",
+    render: (text) => <a>{text}</a>,
+  },
+  { title: "Item", dataIndex: "Item", key: "Item" },
+  {
+    title: "Status",
+    dataIndex: "Status",
+    key: "Status",
+    render: (Status) => <Tag>{Status}</Tag>,
+  },
+  { title: "Popularity", dataIndex: "Popularity", key: "Popularity" },
+];
+const dataSource = [
+  {
+    key: "1",
+    OrderID: "OR9842",
+    Item: "Call of Duty IV",
+    Status: ["Shipped"],
+    Popularity: "90,80,90,-70,61,-83,63",
+  },
+  {
+    key: "2",
+    OrderID: "ORI848",
+    Item: "Samsung Smart Tv",
+    Status: ["Pending"],
+    Popularity: "90,80,90,-70,61,-83,63",
+  },
+  {
+    key: "3",
+    OrderID: "OR7429",
+    Item: "Iphone 6 Plus",
+    Status: ["Delivered"],
+    Popularity: "90,80,90,-70,61,-83,63",
+  },
+  {
+    key: "4",
+    OrderID: "OR7429",
+    Item: "Samsung Smart Tv",
+    Status: ["Processing"],
+    Popularity: "90,80,90,-70,61,-83,63",
+  },
+  {
+    key: "5",
+    OrderID: "OR1848",
+    Item: "Samsung Smart Tv",
+    Status: ["Pending"],
+    Popularity: "90,80,90,-70,61,-83,63",
+  },
+  {
+    key: "6",
+    OrderID: "OR7429",
+    Item: "Iphone 6 plus",
+    Status: ["Delivered"],
+    Popularity: "90,80,90,-70,61,-83,63",
+  },
+  {
+    key: "7",
+    OrderID: "OR9842",
+    Item: "Call of Duty IV",
+    Status: ["Shipped"],
+    Popularity: "90,80,90,-70,61,-83,63",
+  },
+];
+const text5 = (
+  <>
+    <Table dataSource={dataSource} columns={columns} />
+  </>
+);
+const text6 = <></>;
 function Index2() {
   const [visible, SetVisible] = useState(false);
 
@@ -187,24 +431,22 @@ function Index2() {
             <Col md={6} xs={24}>
               <Card>
                 <LikeOutlined style={{ fontSize: "150%" }} />
-                <h3>Likes</h3>
-                <h3>41,410</h3>
+
+                <Statistic title="Likes" value={41410} />
               </Card>
             </Col>
             <Col md={6} xs={24}>
               <Card>
                 <ShoppingCartOutlined style={{ fontSize: "150%" }} />
 
-                <h3>Sales</h3>
-
-                <h3>760</h3>
+                <Statistic title="Sales" value={760} />
               </Card>
             </Col>
             <Col md={6} xs={24}>
               <Card>
                 <UserOutlined style={{ fontSize: "150%" }} />
-                <h3>New members</h3>
-                <h3>2000</h3>
+
+                <Statistic title="New Members" value={2000} />
               </Card>
             </Col>
           </Row>
@@ -213,6 +455,77 @@ function Index2() {
               <Collapse accordion defaultActivateKey={["1"]}>
                 <Panel header="Monthly Recap Report" key="1" extra="-">
                   <h1>{text1}</h1>
+                </Panel>
+              </Collapse>
+            </Col>
+          </Row>
+          <Row>
+            <Col md={16}></Col>
+            <Col md={8} sm={24}>
+              <Card style={{ backgroundColor: "yellow" }}>
+                <h5>Inventory</h5>
+                <h5>
+                  <b>5,200</b>
+                </h5>
+              </Card>
+              <Card style={{ backgroundColor: "lightgreen" }}>
+                <HeartOutlined style={{ fontSize: "150%" }} />
+                <h5>Mentions</h5>
+                <h5>
+                  <b>92,050</b>
+                </h5>
+              </Card>
+              <Card style={{ backgroundColor: "lightred" }}>
+                <CloudDownloadOutlined style={{ fontSize: "150%" }} />
+                <h5>Downloads</h5>
+                <h5>
+                  <b>1,14,381</b>
+                </h5>
+              </Card>
+              <Card style={{ backgroundColor: "lightblue" }}>
+                <MessageOutlined style={{ fontSize: "150%" }} />
+                <h5>Direct messages</h5>
+                <h5>
+                  <b>1,63,921</b>
+                </h5>
+              </Card>
+            </Col>
+          </Row>
+          <Row gutter={8} style={{ marginTop: 30, marginBottom: 30 }}>
+            <Col md={8} sm={24}>
+              <Collapse accordion defaultActivateKey={["2"]}>
+                <Panel header="Direct Chat" key="2" extra="-">
+                  <h1>{text2}</h1>
+                </Panel>
+              </Collapse>
+            </Col>
+            <Col md={8} sm={24} style={{ overflow: "unset" }}>
+              <Collapse accordion defaultActivateKey={["3"]}>
+                <Panel header="Latest members" key="3" extra="-">
+                  <h1>{text3}</h1>
+                </Panel>
+              </Collapse>
+            </Col>
+            <Col md={8} sm={24}>
+              <Collapse accordion defaultActivateKey={["4"]}>
+                <Panel header="Browser Usage" key="4" extra="-">
+                  <h1>{text4}</h1>
+                </Panel>
+              </Collapse>
+            </Col>
+          </Row>
+          <Row>
+            <Col md={16} sm={24}>
+              <Collapse accordion defaultActivateKey={["5"]}>
+                <Panel header="Latest orders" key="5" extra="-">
+                  <h1>{text5}</h1>
+                </Panel>
+              </Collapse>
+            </Col>
+            <Col md={8} sm={24}>
+              <Collapse accordion defaultActivateKey={["6"]}>
+                <Panel header="Recently Added Products" key="6" extra="-">
+                  <h1>{text6}</h1>
                 </Panel>
               </Collapse>
             </Col>
