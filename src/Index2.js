@@ -19,6 +19,7 @@ import {
   Statistic,
   Table,
   Tag,
+  List,
 } from "antd";
 import LeftMenu from "./leftMenu";
 import { useState } from "react";
@@ -41,6 +42,7 @@ import {
   CloudDownloadOutlined,
   HeartOutlined,
   MessageOutlined,
+  ArrowLeftOutlined,
 } from "@ant-design/icons";
 const { Header, Content, Footer } = Layout;
 const { Panel } = Collapse;
@@ -125,10 +127,121 @@ const text1 = (
     </Row>
   </>
 );
-const text2 = <></>;
+const text2 = (
+  <>
+    <Row style={{ height: "150px", overflow: "auto" }}>
+      <Col
+        md={12}
+        sm={24}
+        style={{ display: "flex", justifyContent: "flex-start" }}
+      >
+        <h5>Alexander Pierce</h5>
+      </Col>
+      <Col
+        md={12}
+        sm={24}
+        style={{ display: "flex", justifyContent: "flex-end" }}
+      >
+        <h5 style={{ color: "gray" }}> 23 Jan 2:00pm</h5>
+      </Col>
+      <Col md={5}>
+        {" "}
+        <Image
+          width={50}
+          style={{ borderRadius: "50%" }}
+          src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
+        />
+      </Col>
+      <Col md={19}>
+        <h5>Is this template really for free?That's unbelivable!</h5>
+      </Col>
+      <Col
+        md={12}
+        sm={24}
+        style={{ display: "flex", justifyContent: "flex-start" }}
+      >
+        <h5 style={{ color: "gray" }}> 23 Jan 2:05pm</h5>
+      </Col>
+      <Col
+        md={12}
+        sm={24}
+        style={{ display: "flex", justifyContent: "flex-end" }}
+      >
+        <h5 style={{ color: "white" }}>Sarah Bullock</h5>
+      </Col>
+
+      <Col md={19}>
+        <h5>You better believe it!</h5>
+      </Col>
+      <Col md={5}>
+        {" "}
+        <Image
+          width={50}
+          style={{ borderRadius: "50%" }}
+          src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
+        />
+      </Col>
+      <Col
+        md={12}
+        sm={24}
+        style={{ display: "flex", justifyContent: "flex-start" }}
+      >
+        <h5>Alexander Pierce</h5>
+      </Col>
+      <Col
+        md={12}
+        sm={24}
+        style={{ display: "flex", justifyContent: "flex-end" }}
+      >
+        <h5 style={{ color: "gray" }}> 23 Jan 2:00pm</h5>
+      </Col>
+      <Col md={5}>
+        {" "}
+        <Image
+          width={50}
+          style={{ borderRadius: "50%" }}
+          src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
+        />
+      </Col>
+      <Col md={19}>
+        <h5>Working with AdminLTE on a great new app! wanna join?</h5>
+      </Col>
+      <Col
+        md={12}
+        sm={24}
+        style={{ display: "flex", justifyContent: "flex-start" }}
+      >
+        <h5 style={{ color: "gray" }}> 23 Jan 2:05pm</h5>
+      </Col>
+      <Col
+        md={12}
+        sm={24}
+        style={{ display: "flex", justifyContent: "flex-end" }}
+      >
+        <h5>Sarah Bullock</h5>
+      </Col>
+
+      <Col md={19}>
+        <h5>I would love to!</h5>
+      </Col>
+      <Col md={5}>
+        {" "}
+        <Image
+          width={50}
+          style={{ borderRadius: "50%" }}
+          src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
+        />
+      </Col>
+    </Row>
+  </>
+);
 const text3 = (
   <>
-    <Row style={{ display: "flex", flexWrap: "wrap", overflowInline: "auto" }}>
+    <Row
+      style={{
+        textOverflow: "ellipsis",
+      }}
+    >
       <Space>
         <Col sm={24}>
           <Image
@@ -153,7 +266,7 @@ const text3 = (
           <h5>Yesterday</h5>
         </Col>
 
-        <Col sm={24}>
+        <Col sm={24} style={{ textOverflow: "ellipsis" }}>
           <Image
             width={100}
             style={{ borderRadius: "50%" }}
@@ -165,7 +278,7 @@ const text3 = (
           <h5>12 Jan</h5>
         </Col>
 
-        <Col sm={24}>
+        <Col sm={24} style={{ textoverflow: "ellipsis" }}>
           <Image
             width={100}
             style={{ borderRadius: "50%" }}
@@ -231,7 +344,67 @@ const text3 = (
     </Row>
   </>
 );
-const text4 = <></>;
+
+const text4 = (
+  <>
+    <Row>
+      <Col
+        md={19}
+        sm={24}
+        style={{ display: "flex", justifyContent: "flex-start" }}
+      >
+        <a href="">United States of America</a>
+      </Col>
+      <Col
+        md={5}
+        sm={24}
+        style={{ display: "flex", justifyContent: "flex-end" }}
+      >
+        <h5 style={{ color: "pink" }}>
+          <ArrowDownOutlined style={{ fontSize: "150%" }} />
+          12%
+        </h5>
+      </Col>
+      <Divider />
+      <Col
+        md={19}
+        sm={24}
+        style={{ display: "flex", justifyContent: "flex-start" }}
+      >
+        <a href="">India</a>
+      </Col>
+      <Col
+        md={5}
+        sm={24}
+        style={{ display: "flex", justifyContent: "flex-end" }}
+      >
+        <h5 style={{ color: "pink" }}>
+          <ArrowUpOutlined style={{ fontSize: "150%" }} />
+          4%
+        </h5>
+      </Col>
+      <Divider />{" "}
+      <Col
+        md={19}
+        sm={24}
+        style={{ display: "flex", justifyContent: "flex-start" }}
+      >
+        <a href="">China</a>
+      </Col>
+      <Col
+        md={5}
+        sm={24}
+        style={{ display: "flex", justifyContent: "flex-end" }}
+      >
+        <h5 style={{ color: "pink" }}>
+          <ArrowLeftOutlined style={{ fontSize: "150%" }} />
+          0%
+        </h5>
+      </Col>
+      <Divider />
+    </Row>
+  </>
+);
 const columns = [
   {
     title: "OrderID",
@@ -304,7 +477,92 @@ const text5 = (
     <Table dataSource={dataSource} columns={columns} />
   </>
 );
-const text6 = <></>;
+const text6 = (
+  <>
+    <Row>
+      <Col
+        md={12}
+        sm={24}
+        style={{ display: "flex", justifyContent: "flex-start" }}
+      >
+        <a href="">Samsung TV</a>
+      </Col>
+      <Col
+        md={12}
+        sm={24}
+        style={{ display: "flex", justifyContent: "flex-end" }}
+      >
+        <Tag color="yellow">$1800</Tag>
+      </Col>
+      <Col>
+        <h5>Samsung 32" 1080p 60HzLED Smart HDTV</h5>
+        <Divider />
+      </Col>
+      <Col
+        md={12}
+        sm={24}
+        style={{ display: "flex", justifyContent: "flex-start" }}
+      >
+        <a href="">Bicycle</a>
+      </Col>
+      <Col
+        md={12}
+        sm={24}
+        style={{ display: "flex", justifyContent: "flex-end" }}
+      >
+        <Tag color="blue">$700</Tag>
+      </Col>
+      <Col>
+        <h5>26" Mongoose Dolomite Men's7 speed ,Navy</h5>
+        <Divider />
+      </Col>
+      <Col
+        md={12}
+        sm={24}
+        style={{ display: "flex", justifyContent: "flex-start" }}
+      >
+        <a href="">Xbox One</a>
+      </Col>
+      <Col
+        md={12}
+        sm={24}
+        style={{ display: "flex", justifyContent: "flex-end" }}
+      >
+        <Tag color="red">$350</Tag>
+      </Col>
+      <Col>
+        <h5>Xbox One Console Bundle with Halo Master</h5>
+        <Divider />
+      </Col>
+      <Col
+        md={12}
+        sm={24}
+        style={{ display: "flex", justifyContent: "flex-start" }}
+      >
+        <a href="">Playstation 4</a>
+      </Col>
+      <Col
+        md={12}
+        sm={24}
+        style={{ display: "flex", justifyContent: "flex-end" }}
+      >
+        <Tag color="green">$399</Tag>
+      </Col>
+      <Col>
+        <h5>Playstation 4 500GB console(PS4) </h5>
+        <Divider />
+      </Col>
+    </Row>
+    <Row>
+      <Col>
+        {" "}
+        <Button type="link" style={{ textAlign: "center" }}>
+          View all Products
+        </Button>
+      </Col>
+    </Row>
+  </>
+);
 function Index2() {
   const [visible, SetVisible] = useState(false);
 
@@ -547,7 +805,7 @@ function Index2() {
                 <CopyrightOutlined />
                 <b> 2021</b>
                 <a href="" style={{ fontWeight: "bold" }}>
-                  G TECH.
+                  AdminLTE.io.
                 </a>
                 All rights reserved.
               </Space>
