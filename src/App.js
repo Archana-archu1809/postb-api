@@ -18,10 +18,12 @@ import FileUpload from "./Fileupload";
 import Login from "./Login";
 import PdaUpload from "./PdaUpload";
 import Index2 from "./Index2";
+import Index4 from "./Index4";
+import DashBoard1 from "./DB";
 function App() {
   return (
     <div className="App">
-      <Index2 />
+      <DashBoard1 />
     </div>
   );
 }

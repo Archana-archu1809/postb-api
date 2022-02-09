@@ -11,17 +11,13 @@ import {
   Card,
   Collapse,
   Progress,
-  Select,
-  Input,
   Divider,
-  DatePicker,
   Image,
   Statistic,
   Table,
   Tag,
-  List,
 } from "antd";
-import LeftMenu from "./leftMenu";
+
 import { useState } from "react";
 
 import {
@@ -31,7 +27,6 @@ import {
   FullscreenOutlined,
   PoweroffOutlined,
   CopyrightOutlined,
-  MenuFoldOutlined,
   MenuUnfoldOutlined,
   ArrowUpOutlined,
   ArrowDownOutlined,
@@ -94,7 +89,7 @@ const text1 = (
         style={{ paddingTop: "10px", paddingBottom: "10px" }}
       >
         <h5>0%</h5>
-        <h5>$10,390.90</h5>
+        <h5>$10,39 0.90</h5>
         <h5>TOTAL COST</h5>
       </Col>
       <Col md={1} style={{ paddingTop: "10px", paddingBottom: "10px" }}>
@@ -174,7 +169,6 @@ const text2 = (
         <h5>You better believe it!</h5>
       </Col>
       <Col md={5}>
-        {" "}
         <Image
           width={50}
           style={{ borderRadius: "50%" }}
@@ -196,7 +190,6 @@ const text2 = (
         <h5 style={{ color: "gray" }}> 23 Jan 2:00pm</h5>
       </Col>
       <Col md={5}>
-        {" "}
         <Image
           width={50}
           style={{ borderRadius: "50%" }}
@@ -239,7 +232,7 @@ const text3 = (
   <>
     <Row
       style={{
-        textOverflow: "ellipsis",
+        overflow: "hidden",
       }}
     >
       <Space>
@@ -292,7 +285,7 @@ const text3 = (
       </Space>
     </Row>
 
-    <Row style={{ display: "flex", flexWrap: "wrap", overflowInline: "auto" }}>
+    <Row style={{ display: "flex", flexWrap: "wrap", overflow: "hidden" }}>
       <Space>
         <Col sm={24}>
           <Image
@@ -342,6 +335,11 @@ const text3 = (
         </Col>
       </Space>
     </Row>
+    <Row>
+      <Col md={24} style={{ display: "flex", justifyContent: "center" }}>
+        <Button type="link">View All Users</Button>
+      </Col>
+    </Row>
   </>
 );
 
@@ -383,7 +381,7 @@ const text4 = (
           4%
         </h5>
       </Col>
-      <Divider />{" "}
+      <Divider />
       <Col
         md={19}
         sm={24}
@@ -475,6 +473,22 @@ const dataSource = [
 const text5 = (
   <>
     <Table dataSource={dataSource} columns={columns} />
+    <Row>
+      <Col
+        md={12}
+        sm={24}
+        style={{ display: "flex", justifyContent: "flex-start" }}
+      >
+        <Button type="primary">Place New Order</Button>
+      </Col>
+      <Col
+        md={12}
+        sm={24}
+        style={{ display: "flex", justifyContent: "flex-end" }}
+      >
+        <Button type="primary">View All Orders</Button>
+      </Col>
+    </Row>
   </>
 );
 const text6 = (
@@ -554,11 +568,8 @@ const text6 = (
       </Col>
     </Row>
     <Row>
-      <Col>
-        {" "}
-        <Button type="link" style={{ textAlign: "center" }}>
-          View all Products
-        </Button>
+      <Col md={24} style={{ display: "flex", justifyContent: "center" }}>
+        <Button type="link">View all Products</Button>
       </Col>
     </Row>
   </>
