@@ -20,10 +20,11 @@ import PdaUpload from "./PdaUpload";
 import Index2 from "./Index2";
 import Index4 from "./Index4";
 import DashBoard1 from "./DB";
+import Index6R from "./Index6r";
 function App() {
   return (
     <div className="App">
-      <DashBoard1 />
+      <Index6R />
     </div>
   );
 }

@@ -12,6 +12,7 @@ import {
 } from "antd";
 import LeftMenu from "./leftMenu";
 import { useState } from "react";
+import CanvasDraw from "react-canvas-draw";
 
 import {
   SearchOutlined,
@@ -83,7 +84,15 @@ const text1 = (
     </Row>
   </>
 );
-const text2 = <></>;
+const text2 = (
+  <>
+    <Row>
+      <Col>
+        <CanvasDraw />
+      </Col>
+    </Row>
+  </>
+);
 const text3 = (
   <>
     <Row>
@@ -95,6 +104,7 @@ const text3 = (
         <h5>on Time Billing</h5>
       </Col>
     </Row>
+    <CanvasDraw />
   </>
 );
 const text4 = (
@@ -106,6 +116,11 @@ const text4 = (
         style={{ display: "flex", justifyContent: "flex-end", color: "blue" }}
       >
         <h5>on Time Dispatch</h5>
+      </Col>
+    </Row>
+    <Row>
+      <Col>
+        <CanvasDraw />
       </Col>
     </Row>
   </>
@@ -139,6 +154,11 @@ const text6 = (
         <h5>To Collect</h5>
       </Col>
     </Row>
+    <Row>
+      <Col>
+        <CanvasDraw />
+      </Col>
+    </Row>
   </>
 );
 const text7 = (
@@ -152,6 +172,11 @@ const text7 = (
         <h5>Short paid to recover</h5>
       </Col>
     </Row>
+    <Row>
+      <Col>
+        <CanvasDraw />
+      </Col>
+    </Row>
   </>
 );
 const text8 = (
@@ -163,6 +188,11 @@ const text8 = (
         style={{ display: "flex", justifyContent: "flex-end", color: "blue" }}
       >
         <h5>Shortage-recover from</h5>
+      </Col>
+    </Row>
+    <Row>
+      <Col>
+        <CanvasDraw />
       </Col>
     </Row>
   </>
@@ -196,6 +226,11 @@ const text10 = (
         <h5>Outstanding to transporters</h5>
       </Col>
     </Row>
+    <Row>
+      <Col>
+        <CanvasDraw />
+      </Col>
+    </Row>
   </>
 );
 const text11 = (
@@ -207,6 +242,11 @@ const text11 = (
         style={{ display: "flex", justifyContent: "flex-end", color: "blue" }}
       >
         <h5>Outstanding to Ware House</h5>
+      </Col>
+    </Row>
+    <Row>
+      <Col>
+        <CanvasDraw />
       </Col>
     </Row>
   </>
@@ -222,9 +262,22 @@ const text12 = (
         <h5>Outstanding to focus vendors</h5>
       </Col>
     </Row>
+    <Row>
+      <Col>
+        <CanvasDraw />
+      </Col>
+    </Row>
   </>
 );
-const text13 = <></>;
+const text13 = (
+  <>
+    <Row>
+      <Col>
+        <CanvasDraw />
+      </Col>
+    </Row>
+  </>
+);
 function Index4() {
   const [visible, SetVisible] = useState(false);
 
